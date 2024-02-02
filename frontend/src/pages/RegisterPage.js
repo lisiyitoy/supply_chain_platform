@@ -48,7 +48,7 @@ export default function RegisterPage() {
       }),
     };
     
-    fetch("/api/register-user", requestOptions)
+    fetch("/api/user-register", requestOptions)
       .then((response) => {
         setDidRegister(true);
         if (response.status == 201) {
